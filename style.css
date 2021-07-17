@@ -1,0 +1,395 @@
+:root {
+    --primary-color: white;
+    --secondary-color: rgba(229, 148, 0 , 0.9);
+    --overlay-color:white;
+    --menu-speed: 0.75s;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Source Code Pro', monospace !important;
+    line-height: 1.4;
+    color:black;
+  }
+  html, body{
+    overflow:initial !important;
+  }
+  
+  .container {
+    max-width: 100vw;
+    padding: 0 10rem;
+    height: 100vh;
+    line-height: 1.7rem;
+    text-align: left;
+    display: grid;
+    grid-template-areas: 'left  right';
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5rem;
+  }
+  .container-column{
+    max-width: 100vw;
+    height: 100vh;
+  }
+ .left {
+   grid-area: left;
+   max-width: 760px;
+ }
+ .right {
+   grid-area: right;
+ }
+  #home h1 {
+    margin-bottom: 40px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 4rem;
+    width:max-content;
+    position:relative;
+  }
+  #home h1::before,
+  #home h1::after{
+    content: '';
+    position:absolute;
+    margin-top:-20px;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    padding:40px 20px;
+  }
+  #home h1::before{
+    background: white;
+    animation:typewriter 4s steps(9) forwards;
+  }
+  @keyframes typewriter {
+    to{
+      left:100%;
+    }
+  }
+  #home p{
+    font-size: 1.4rem;
+    font-family: 'Yomogi', cursive;
+  }
+  #home h4 {
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 400px;
+    font-weight: 100;
+    font-size: 1.4rem;
+  }
+  #home h4 i{
+    color: coral;
+  }
+  
+ .colorthis {
+   color:coral;
+   font-weight: bold;
+ }
+
+ #home img {
+   width:85%;
+   border-radius: 50%;
+   margin-left: 90px;
+   border: 4px solid coral;
+
+ }
+ .title {
+   font-size: 3rem;
+   font-family: 'Source Code Pro', monospace;
+   font-weight: 100;
+   transition: all 1s ease-in;
+   text-align: center;
+   padding-top: 20px;
+ }
+ .title2{
+  font-size: 1.5rem;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 100;
+  transition: all 1s ease-in;
+  text-align: center;
+  padding-top:40px
+ }
+ .title::after{
+   content: '';
+   display: block;
+   margin-top:20px;
+   border-bottom: solid 3px coral;  
+  transform: scaleX(0);  
+  transition: transform 0.5s ease-in-out;
+ }
+ .title:after { transform: scaleX(1); }
+ .uni{
+   background: url(./book1.jpg) no-repeat center center/cover;
+   max-height: 250px;
+ }
+ .Onesec {
+   text-align: right;
+   margin-right: 0;
+   display: flex;
+   flex-direction: column;
+   font-size: 2rem;
+   line-height: 4rem;
+   color:white;
+   padding:50px 200px;
+ }
+ .Onesec h3 {
+   text-align: center;
+   background-color: rgba(255, 104, 44, 0.75);
+   width: fit-content;
+   font-weight: 100;
+   align-self: flex-end;
+ }
+ .bracket {
+  background-color: rgba(255, 104, 44, 0.75);
+  color:white;
+  width: fit-content;
+  font-weight: 100;
+ }
+ .courses{
+   background: url(./book2.jpg) no-repeat center center/cover;
+   font-size: 2rem;
+   line-height: 3rem;
+   padding:0px 30px;
+ }
+ .skills-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 80px;
+ }
+ .contact-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 80px;
+   margin-bottom: 80px;
+ 
+ }
+ .contact-container i {
+   padding:20px 50px;
+   font-size: 2rem;
+   color:coral;
+
+ }
+ .uncolor{
+   color:black;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 100;
+ }
+ 
+
+.card {
+  width: 180px;
+  height: 180px;
+  padding:40px 40px;
+  margin-right: 50px;
+  transition: all 0.3s ease-in;
+}
+.card2 {
+  width: 130px;
+  height: 130px;
+  padding:40px 40px;
+  margin-right: 50px;
+  transition: all 0.3s ease-in;
+}
+#html{
+  background: url(./skills/html.png) no-repeat center center/cover;
+}
+#css{
+  background: url(./skills/css.png) no-repeat center center/cover;
+  width: 9%;
+}
+#cpp{
+  background: url(./skills/c++.png) no-repeat center center/cover;
+  width: 9%;
+}
+#java{
+  background: url(./skills/java.png) no-repeat center center/cover;
+  width: 9%;
+}
+#ps{
+  background: url(./skills/ps.png) no-repeat center center/cover;
+
+}
+#sass{
+  background: url(./skills/sass.png) no-repeat center center/cover;
+  width: 240px;
+  height: 180px;
+
+}
+#bash{
+  background: url(./skills/bash.png) no-repeat center center/cover;
+
+}
+#bootstrap{
+  background: url(./skills/Bootstrap_logo.svg.png) no-repeat center center/cover;
+
+}
+#js{
+  background: url(./skills/js.png) no-repeat center center/cover;
+
+}
+#firebase{
+  background: url(./skills/firebase.png) no-repeat center center/cover;
+
+}
+#git{
+  background: url(./skills/git.png) no-repeat center center/cover;
+
+}
+#tw{
+  background: url(./skills/tails.jpg) no-repeat center center/cover;
+
+}
+#html:hover{
+  background:url(./skills/HTML2.png) no-repeat center center/cover;
+
+}
+#css:hover{
+  background:url(./skills/CSS2.png) no-repeat center center/cover;
+
+}
+#cpp:hover{
+  background:url(./skills/cpp2.png) no-repeat center center/cover;
+
+}
+#java:hover{
+  background:url(./skills/java2.png) no-repeat center center/cover;
+
+}
+#ps:hover{
+  background:url(./skills/ps2.png) no-repeat center center/cover;
+
+}
+#sass:hover{
+  background:url(./skills/sass2.png) no-repeat center center/cover;
+
+}
+#bash:hover{
+  background:url(./skills/bash2.png) no-repeat center center/cover;
+
+}
+#bootstrap:hover{
+  background:url(./skills/boot2.png) no-repeat center center/cover;
+
+}
+#js:hover{
+  background:url(./skills/js2.png) no-repeat center center/cover;
+
+}
+#firebase:hover{
+  background:url(./skills/firebase2.png) no-repeat center center/cover;
+
+}
+#git:hover{
+  background:url(./skills/git2.png) no-repeat center center/cover;
+
+}
+#tw:hover{
+  background:url(./skills/tw2.png) no-repeat center center/cover;
+
+}
+
+.right{
+  background: url(./me.jpg) no-repeat center center/cover;
+  height: 500px;
+  width:500px;
+  border-radius: 50%;
+  border: 2px solid coral;
+}
+#finance {
+  width: 300px;
+  height: 200px;
+  background: url(./EL.png) no-repeat center center/cover;
+  transition: all 0.4s ease;
+}
+.work-container h1{
+  font-size: 1.2rem;
+  color:black;
+  font-weight: 100;
+  padding:1rem 0;
+}
+#joms {
+  width: 300px;
+  height: 200px;
+  background: url(./joms.png) no-repeat center center/cover;
+}
+#sth2 {
+  width: 300px;
+  height: 200px;
+  background: url(./1.png) no-repeat center center/cover;
+}
+.work-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+  margin-left: 200px;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-height:500px){
+  .courses{
+    padding-bottom:80px;
+  }
+  .skills-container{
+    padding-bottom:80px;
+  }
+}
+@media(min-width:1024px)and (max-width:1200px){
+
+#home p{
+  font-size: 2rem;
+  line-height: 3rem;
+}
+#home h4{
+  display: none;
+}
+#home h1 {
+  font-size: 5rem;
+  padding-bottom: 50px;
+} 
+.menu-wrap .menu > div > div > ul > li {
+  font-size: 3rem; 
+}
+.container{
+  align-items: center;
+  justify-content: center;
+}
+#edu{
+  margin-bottom:20px;
+}
+.skills {
+  margin-top:100px;
+  margin-left:0px;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  margin-top: 60px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.card {
+  width: 170px !important;
+  height: 170px !important;
+}
+.card2 {
+  width: 140px !important;
+  height: 140px !important;
+
+}
+#sass{
+  width: 190px !important;
+  height: 140px !important;
+}
+}

@@ -1,0 +1,159 @@
+:root {
+    --overlay-color:coral 
+  }
+.menu-wrap {
+    left: 40%;
+  }
+  .menu-wrap .menu > div > div > ul > li {
+    color: white;
+  }
+  
+  .menu-wrap .toggler {
+    left: 40%;
+  }
+  
+  .menu-wrap .hamburger {
+    left: 40%;
+  }
+  .menu-wrap .menu > div {
+    width: 250vw;
+    height: 250vw;
+ 
+  }
+  .container {
+      grid-template-areas: 'left'
+      'right';
+      grid-gap: none;
+      align-items: center;
+      justify-content: center;
+      padding:30px 30px;
+
+  } 
+  .right {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    justify-self: center;
+    margin-top: -120px;
+  }
+  #home .left {
+      line-height: 1.4rem;
+      text-align: center;
+  }#home .left h1 {
+    line-height: 4rem;
+  }
+#home {
+  overflow: scroll;
+}
+  #home h4 {
+      display: none;
+  }
+
+
+  .uni {
+      height:270px;
+  }
+  
+
+.Onesec p{
+    display: none;
+}
+
+.Onesec h3 {
+    margin-left: 1rem;
+    text-align: center;  
+  }
+.Onesec h4 {
+    margin-left: -180px;
+    text-align: center;  
+  }
+ #skills {
+     overflow: visible;
+ }
+ #edu{
+  overflow: visible;
+ }
+  .skills-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap:1rem;
+     margin-left: 70px;
+     margin-top: 10px;
+  }
+  .card {
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in;
+  }
+  .card2 {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease-in;
+  }
+  #sass{
+    width: 100px;
+    height: 50px; 
+  }
+  .title {
+      font-size: 2rem;
+  }
+  .title2{
+      font-size: 1.2rem;
+      margin-top: -50px;
+  }
+  .courses{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding:50px 80px 50px 0px;
+    font-weight: bold;
+  }
+  @media(max-height:750px)
+  {
+  body {
+    overflow: scroll;
+  }}
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-container i {
+    padding:0;
+    font-size: 2rem;
+    color:coral;
+    margin-top:30px;
+ 
+  }
+  .work-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  #finance {
+    width: 250px;
+    height: 150px;
+    background: url(./EL.png) no-repeat center center/cover;
+  }
+  #sth1 {
+    width: 250px;
+    height: 150px;
+    background: url(./1.png) no-repeat center center/cover;
+  }
+  #sth2 {
+    display: none;
+    width: 250px;
+    height: 150px;
+    background: url(./1.png) no-repeat center center/cover;
+  }
+  .title2{
+    padding-top:80px
+   }
+
+  .Onesec h3 {
+    align-self: center;
+    margin-left: -150px;
+  }
+  body{
+    font-family: 'Source Code Pro', monospace !important;
+  }
