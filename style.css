@@ -317,6 +317,11 @@
   height: 200px;
   background: url(./joms.png) no-repeat center center/cover;
 }
+#covid {
+  width: 300px;
+  height: 200px;
+  background: url(./app.png) no-repeat center center/cover;
+}
 #sth2 {
   width: 300px;
   height: 200px;
