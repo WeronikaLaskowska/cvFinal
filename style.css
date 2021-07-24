@@ -186,14 +186,14 @@
   height: 180px;
   padding:40px 40px;
   margin-right: 50px;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 .card2 {
   width: 130px;
   height: 130px;
   padding:40px 40px;
   margin-right: 50px;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 #html{
   background: url(./skills/html.png) no-repeat center center/cover;
@@ -306,12 +306,7 @@
   background: url(./EL.png) no-repeat center center/cover;
   transition: all 0.4s ease;
 }
-.work-container h1{
-  font-size: 1.2rem;
-  color:black;
-  font-weight: 100;
-  padding:1rem 0;
-}
+
 #joms {
   width: 300px;
   height: 200px;
@@ -322,16 +317,19 @@
   height: 200px;
   background: url(./app.png) no-repeat center center/cover;
 }
-#sth2 {
+#weather {
   width: 300px;
   height: 200px;
-  background: url(./1.png) no-repeat center center/cover;
+  background: url(./weather.PNG) no-repeat center center/cover;
+  margin-bottom:80px;
 }
+
 .work-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
   margin-top: 40px;
-  margin-left: 200px;
+  margin-left: 150px;
   align-items: center;
   justify-content: center;
 }
