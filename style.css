@@ -333,6 +333,56 @@
   align-items: center;
   justify-content: center;
 }
+#joms,
+#finance,
+#covid,
+#weather {
+  position: relative;
+ 
+}
+
+#joms::after,
+#finance::after{
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+  background-color: coral;
+  position: absolute;
+  color:#fff;
+  content: 'Fictional website using CSS/Sass';
+  font-size: 2rem;
+  padding-top:20px;
+  text-align: center;
+  top:0;
+  left: 0;
+  bottom:0;
+  right: 0; 
+  font-weight: bold;
+}
+#covid::after,
+#weather::after{
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+  background-color: coral;
+  position: absolute;
+  color:#fff;
+  content: 'Javascript Application using rest API';
+  font-size: 2rem;
+  padding-top:20px;
+  text-align: center;
+  top:0;
+  left: 0;
+  bottom:0;
+  right: 0; 
+  font-weight: bold;
+}
+#joms:hover::after,
+#finance:hover::after{
+opacity:0.8;
+}
+#covid:hover::after,
+#weather:hover::after{
+opacity:0.8;
+}
 @media(max-height:500px){
   .courses{
     padding-bottom:80px;
