@@ -360,6 +360,7 @@
   right: 0; 
   font-weight: bold;
 }
+
 #covid::after,
 #weather::after{
   transition: opacity 0.5s ease-in;
